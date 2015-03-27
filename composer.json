@@ -1,5 +1,5 @@
 {
-    "name": "kyrenator/cache-queries",
+    "name": "kyrenator/query-cache",
     "description": "Easily Cache Eloquent Collections",
     "license": "MIT",
     "authors": [
@@ -14,8 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Kyrenator\\QueryCache": "src/"
+            "Kyrenator\\QueryCache\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
