@@ -3,7 +3,7 @@ namespace Kyrenator\QueryCache;
 use Kyrenator\QueryCache\CachableQueryBuilder as QueryBuilder;
 trait QueryCache {
 
-    protected $cacheTags;
+    protected $cacheTagsPassed;
     /**
      * Boot the Active Events trait for a model.
      *
@@ -12,11 +12,11 @@ trait QueryCache {
     public static function bootQueryCache()
     {
         $model = parent::getModel();
-        $cacheTags = self::getCacheTags($model);
+        $cacheTagsPassed = self::getCacheTags($model);
 
         if($model->cacheAll)
         {
-            static::addGlobalScope(new QueryCacheScope($cacheTags));
+            static::addGlobalScope(new QueryCacheScope($cacheTagsPassed));
         }
         if($model->clearOnChange)
         {
