@@ -1,4 +1,4 @@
-> **IMPORTANT NOTICE: This package is not maintenanced and maybe not working at all. Use it at your own risk!!**
+> **IMPORTANT NOTICE: This package is not maintained and maybe not working at all. Use it at your own risk!!**
 
 # Laravel 5 query cache
 
@@ -7,7 +7,7 @@ This Laravel 5 package allows you to easily cache eloquent queries by implementi
 ##How to use
 ###Step 1: Install Through Composer
 ```
-composer require hootlex/query-cache
+composer require kyrenator/query-cache
 ```
 ###Step 2: Use QueryCache In Your Model
 ```php
